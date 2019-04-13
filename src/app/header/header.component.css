@@ -1,0 +1,44 @@
+.header-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    height: 65px;
+}
+
+.col{
+    flex-grow: 1;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: purple;
+    font-size: 30px;
+}
+
+.auth-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.btn-item{
+    width: 100px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: purple;
+    border: 1px solid purple;
+    border-radius: 3px;
+    margin: 0 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold
+}
