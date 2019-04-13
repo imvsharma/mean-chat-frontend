@@ -8,7 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { ChatroomComponent } from './chatroom/chatroom.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule }   from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,8 @@ import { RegisterComponent } from './register/register.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

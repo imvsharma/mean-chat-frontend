@@ -1,7 +1,8 @@
 <div class="header-container">
   <div class="col logo">GoChat</div>
   <div class="col auth-btn">
-    <div class="btn-item" (click)="goToLogin()">Login</div>
-    <div class="btn-item" (click)="goToRegister()">Signup</div>
+    <div class="btn-item" (click)="goToLogin()" *ngIf="!this.auth.isAuthenticated">Login</div>
+    <div class="btn-item" (click)="goToRegister()" *ngIf="!this.auth.isAuthenticated">Signup</div>
+    <div class="btn-item" (click)="logout()" *ngIf="this.auth.isAuthenticated">Logout</div>
   </div>
 </div>

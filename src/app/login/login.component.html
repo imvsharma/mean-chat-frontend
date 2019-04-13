@@ -1,14 +1,14 @@
 <div class="login-container">
   <div class="login-header">Login</div>
-  <form >
+  <form (ngSubmit)="onSubmit()">
     <div class="form-input-container">
-      <input type="text" placeholder="Enter your email-id">
+      <input type="email" placeholder="Enter your email-id" [(ngModel)]="user.email" name="email">
     </div>
     <div class="form-input-container">
-      <input type="password" placeholder="Enter your password">
+      <input type="password" placeholder="Enter your password" [(ngModel)]="user.password" name="password">
     </div>
     <div class="form-btn-container">
-      <button class="login-btn">Login</button>
+      <button type="submit" class="login-btn">Login</button>
     </div>
   </form>
 </div>
